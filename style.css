@@ -1,0 +1,289 @@
+body {
+    background-color: white;
+    font-family: 'Montserrat ', 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+header {
+    display: flex;
+    width: 100%;
+    height: 6%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid;
+    border-bottom-color: #E5E5E5;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-buttons {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p.on-main-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.switch-lang-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88%;
+    margin: 0;
+    padding: 0;
+    /*background-color: rgba(0, 0, 0, 0.1);
+    background-image: url("img/background-avocado-test.png");*/
+}
+
+.main-wrap {
+    width: 284px;
+    margin-top: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+h1 {
+    display: inline-flex;
+    align-items: flex-start;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+p.avodata-tagline {
+    display: inline-flex;
+    flex-flow: wrap;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0F0F0F;
+    margin: 4px 0 8px 0;
+    padding: 0;
+}
+
+/*--РАЗБЕРИСЬ С BORDER ВОКРУГ ЭЛЕМЕНТОВ--*/
+
+.buttons-switch-group {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+}
+
+button {
+    margin: 26px 0 4px 0;
+    padding-bottom: 8px;
+    width: 142px;
+    height: 22px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-collapse: collapse;
+    border-style: none;
+    border-bottom: 2px solid;
+    border-bottom-color: #333333;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.login-button {
+    width: 142px;
+    text-align: center;
+}
+
+.reg-button {
+    border-bottom: 1px solid;
+    border-bottom-color: #828282;
+    border-radius: 2px;
+    color: #828282;
+}
+
+input[type=email] {
+    margin: 8px 0 4px 0;
+    padding: 4px 16px;
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    margin: 4px 0 8px 0;
+    padding: 4px 16px;
+    width: 284px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+input[type=email]:hover,
+input[type=password]:hover {
+    border: 1px solid #828282;
+    outline: 0;
+    outline-offset: 0;
+}
+
+input[type=email]:focus,
+input[type=password]:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #828282;
+}
+
+input[type=email]:focus::placeholder,
+input[type=password]:focus::placeholder {
+    transform: translateY(-14px);
+    transition-duration: .5s;
+    font-size: 9px;
+}
+
+.forgot-pass {
+    display: inline-flex;
+    margin: 4px 0 12px 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+
+input[type=submit] {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    border: #333333;
+    border-radius: 5px;
+    width: 284px;
+    height: 48px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    background-color: #f2f2f2;
+    border-top: 1px solid;
+    border-top-color: #E5E5E5;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    vertical-align: center;
+}
+
+ul {
+    height: auto;
+    width: 80%;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 2px;
+    transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+a:hover {
+    color: #0F0F0F;
+}
+
+a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #0F0F0F;
+    content: "";
+    transform: scale(0);
+    transition: transform .5s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+a:hover:after {
+    transform: scale(1);
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
